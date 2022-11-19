@@ -53,8 +53,7 @@ const todoList = () => {
           display_list.push(`[x] ${task.title}`);
         } else {
           display_list.push(`[x] ${task.title} ${task.dueDate}`);
-        }
-      }
+        }}
     });
     return display_list.join("\n");
   };
@@ -64,9 +63,7 @@ const todoList = () => {
     add,
     markAsComplete,
     overdue,
-    dueToday,
-    dueLater,
-    toDisplayableList,
+    dueToday, dueLater, toDisplayableList,
   };
 };
 
